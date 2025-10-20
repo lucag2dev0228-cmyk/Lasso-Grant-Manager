@@ -1,0 +1,16 @@
+{
+  "name": "lasso-grant-manager",
+  "version": "1.0.0",
+  "description": "A modern grant management system for farmers with AI-powered tagging",
+  "scripts": {
+    "start": "start.bat",
+    "start:unix": "./start.sh",
+    "backend": "cd backend && call venv\\Scripts\\activate.bat && python app.py",
+    "frontend": "cd frontend && npm start",
+    "install-all": "cd frontend && npm install && cd ../backend && python -m venv venv && call venv\\Scripts\\activate.bat && pip install -r requirements.txt",
+    "setup": "npm run install-all && echo 'Please create backend/.env file with your OpenAI API key'"
+  },
+  "keywords": ["grants", "farming", "ai", "tagging", "react", "flask"],
+  "author": "Lasso Take-home Assessment",
+  "license": "MIT"
+}
